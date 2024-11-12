@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #7264d6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    font-size: 1.6rem;
+}
