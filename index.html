@@ -86,6 +86,10 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -95,6 +99,119 @@
         <title>CeloBank</title>
     </head>
     <body>
-        <h1>Huynhnhatminh</h1>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="/">
+                        <div class="logo">
+                            <img
+                                src="./assets/icon/logo.svg"
+                                alt=""
+                                class="logo__img"
+                            />
+                            <p class="logo__name">CeloBank</p>
+                        </div>
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="nav__item nav__item--active"
+                                >
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__item">Products</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__item">Features</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__item">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Action -->
+                    <div class="header__cta">
+                        <a href="#!" class="header-cta">Log in</a>
+                        <a href="#!" class="btn header-btn">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <!-- Hero content -->
+                        <section class="hero__content">
+                            <p class="section-title">Digital Smart Wallet</p>
+                            <h1 class="hero__content-heading">
+                                Digital <strong class="hero__content-heading--strong">Payment</strong class=""> For Everyone.
+                            </h1>
+                            <p class="section-desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <form action="" class="hero__form">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id=""
+                                    class="hero__form-input"
+                                    placeholder="Your email address"
+                                    autocomplete="off"
+                                />
+                                <button
+                                    type="submit"
+                                    class="btn hero__form-submit"
+                                >
+                                    Get Started
+                                </button>
+                            </form>
+                            <span class="hero__content-note">
+                                *We’ll respect the inbox and never share your
+                                email.
+                            </span>
+                        </section>
+
+                        <!-- Hero media -->
+                         <figure class="hero__media">
+                            <img src="./assets/img/hero-img.png" alt="" class="hero__media-img">
+                            <div class="hero__dep" data-aos="fade-right">
+                                <img src="./assets/icon/hero-download.svg" alt="" class="hero__dep-img">
+                                <p class="hero__dep-desc">Deposite</p>
+                                <span class="hero__dep-money">$32000</span>
+                            </div>
+                            <div class="hero__interest" data-aos="flip-right">
+                                <span class="hero__interest-data">0%</span>
+                                <p class="hero__interest-desc">Interest</p>
+                            </div>
+                            <div class="hero__secured" data-aos="fade-left">
+                                <img src="./assets/icon/hero-money.svg" alt="" class="hero__secured-img">
+                                <div class="hero__secured-info">
+                                    <span class="hero__secured-money">$1.310</span>
+                                    <p class="hero__secured-title">SECURED FUNDS</p>
+                                </div>
+                            </div>
+                         </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script> 
     </body>
 </html>
