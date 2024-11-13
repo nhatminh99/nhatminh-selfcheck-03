@@ -4,12 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Embed Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
         <!-- Favicon -->
         <link
@@ -147,7 +144,7 @@
             </div>
         </header>
 
-        <main>
+        <main style="height: 8000px;">
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
@@ -159,7 +156,7 @@
                                 Digital <strong class="hero__content-heading--strong">Payment</strong class=""> For Everyone.
                             </h1>
                             <p class="section-desc">
-                                We bring together eveything that’s required to
+                                We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
@@ -190,7 +187,7 @@
                             <img src="./assets/img/hero-img.png" alt="" class="hero__media-img">
                             <div class="hero__dep" data-aos="fade-right">
                                 <img src="./assets/icon/hero-download.svg" alt="" class="hero__dep-img">
-                                <p class="hero__dep-desc">Deposite</p>
+                                <p class="hero__dep-desc">Deposit</p>
                                 <span class="hero__dep-money">$32000</span>
                             </div>
                             <div class="hero__interest" data-aos="flip-right">
@@ -208,10 +205,59 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Work -->
+             <section class="work">
+                <div class="container">
+                    <div class="work__inner">
+                        <!-- Work media -->
+                        <div class="work__media">
+                            <figure class="work__media-img">
+                                <img src="./assets/img/work-img.png" alt="" class="work__img">
+                                <img src="./assets/icon/work-icon.svg" alt="" class="work-img__icon">
+                            </figure>
+                            
+                            <div class="work__media-info" data-aos="fade-left">
+                                <img src="./assets/img/work-active.svg" alt="" class="work__media-info--img">
+                                <div class="work__media-active">
+                                    <p class="work__media-title">Congratulations</p>
+                                    <p class="work__media-desc">Your account activated</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work content -->
+                         <section class="work__content">
+                            <p class="section-title">Digital Smart Wallet</p>
+                            <h2 class="section-heading">How It Works</h2>
+                            <div class="work__list">
+                                <!-- Work item 1 -->
+                                <div class="work-item">
+                                    <h3 class="work__list-heading">1. Open a High Interest Checking account</h3>
+                                    <p class="work__list-desc">Fund your bank account with a minimum balance of $100. Enroll in 3 minutes or less!</p>
+                                </div>
+
+                                <!-- Work item 2 -->
+                                <div class="work-item">
+                                    <h3 class="work__list-heading">2. 10 point-of-sale transactions each Month that are at least $10 each.</h3>
+                                    <p class="work__list-desc">Be sure to use your rewards checking account as often as possible in order to accue APYI</p>
+                                </div>
+
+                                <!-- Work item 3 -->
+                                <div class="work-item">
+                                    <h3 class="work__list-heading">3. Receive up to 5.50% APY</h3>
+                                    <p class="work__list-desc">The APY you earn will be based on your account balance and satisfying the transaction requirement.</p>
+                                </div>
+
+                            </div>
+                         </section>
+                    </div>
+                </div>
+             </section>
         </main>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
-          </script> 
+        </script> 
     </body>
 </html>
