@@ -62,8 +62,6 @@ select {
     display: flex;
     align-items: center;
 
-    margin-bottom: 12px;
-
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -87,12 +85,14 @@ select {
 
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.17;
+    line-height: 1.8;
 
     color: #696d76;
 }
 
 .section-heading {
+    margin-top: 12px;
+
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25;
@@ -498,4 +498,244 @@ select {
     line-height: 1.75;
 
     color: #696d76;
+}
+
+/* ====================================================== Payments ====================================================== */
+.payments {
+    padding: 65px 0;
+    margin-top: 30px;
+}
+
+.payments__inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    row-gap: 160px;
+}
+
+.payments__content {
+    width: 470px;
+}
+
+.payments__content-desc {
+    width: 470px;
+}
+
+.section-list {
+    margin-top: 28px;
+}
+
+.section-list__item {
+    margin-top: 18px;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+
+    color: #212832;
+}
+
+.section-list__item::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    margin-right: 12px;
+
+    background: #7264d6;
+}
+
+.payments__cta {
+    width: 149px;
+    height: 58px;
+
+    margin-top: 38px;
+}
+
+.payments__media {
+    position: relative;
+
+    width: 482px;
+}
+
+.payments-img {
+    width: 100%;
+}
+
+.payments-send {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: -48px;
+    right: -88px;
+
+    width: 276px;
+    height: 86px;
+
+    padding: 23px 13px;
+    border-radius: 12px;
+
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.payments-send__img {
+    margin: -17px 0 -17px -23px;
+}
+
+.payments-send__info--title {
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    color: #212832;
+}
+
+.payments-send__info--desc {
+    margin-top: 4px;
+
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: #696d76;
+}
+
+.payments-send__money {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-left: auto;
+}
+
+.payments-send__money--price {
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    color: #212832;
+}
+
+.payments-send__money--date {
+    margin-top: 3px;
+
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: #696d76;
+}
+
+.payments-income {
+    position: absolute;
+    right: -88px;
+    bottom: -55px;
+
+    width: 120px;
+    height: 120px;
+
+    padding: 15px 0 15px 15px;
+    border-radius: 16px;
+
+    background: #439f90;
+}
+
+.payments-income__desc {
+    margin: 14px 0 6px;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.payments-income__price {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    color: #fff;
+}
+
+.payments__media-wrap--bottom {
+    position: relative;
+
+    width: 470px;
+}
+
+.payments__media-wrap--bottom::after {
+    content: url(../img/payments-bottom-bg.svg);
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+.payments-img--bottom {
+    width: 413px;
+    height: 600px;
+
+    margin-left: 29px;
+}
+
+.payments__choose {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    right: -60px;
+    bottom: 61px;
+
+    width: 281px;
+
+    padding: 28px;
+    border-radius: 16px;
+
+    background: #fff;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.payments__choose-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+
+    color: #212832;
+}
+
+.payments__choose-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+    margin-top: 20px;
+}
+
+.payments__dola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: -91px;
+    bottom: 224px;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #7264d6;
+}
+
+.payments__content-bottom {
+    margin-left: auto;
 }
