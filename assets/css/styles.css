@@ -739,3 +739,151 @@ select {
 .payments__content-bottom {
     margin-left: auto;
 }
+
+/* ====================================================== Clients ====================================================== */
+.clients {
+    padding: 65px 0;
+    margin-top: 30px;
+}
+
+.clients-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clients-top__desc {
+    text-align: center;
+    font-size: 1.6rem;
+
+    width: 435px;
+}
+
+.clients-list {
+    display: flex;
+    column-gap: 30px;
+
+    margin-top: 70px;
+}
+
+.clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 570px;
+}
+
+.clients-item__quote {
+    position: relative;
+
+    padding: 42px 28px;
+    filter: drop-shadow(0 0 2px #dfe2e8);
+
+    border-radius: 12px;
+
+    background: #fff;
+
+    text-align: center;
+}
+
+.clients-item__quote::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -120px;
+
+    border-right: 40px;
+    border-left: 40px;
+    border-top: 60px;
+    border-bottom: 60px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.clients-item__quote--active {
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.clients-quote__title {
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.55;
+
+    color: #696d76;
+}
+
+.clients-quote__avatar {
+    display: flex;
+    align-items: flex-end;
+
+    width: 104px;
+    height: 104px;
+
+    border-radius: 50%;
+    margin-top: 96px;
+
+    background: #4ab5e3;
+
+    overflow: hidden;
+}
+
+.clients-quote__avatar-right {
+    background: #439f90;
+}
+
+.clients-quote__img {
+    width: 100%;
+    height: 90%;
+
+    object-fit: cover;
+}
+
+.clients-quote__name {
+    margin-top: 20px;
+
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+
+    color: #070052;
+}
+
+.clients-quote__info {
+    margin-top: 2px;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+
+    color: #696d76;
+}
+
+.clients-dot__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 38px;
+    column-gap: 12px;
+
+    cursor: pointer;
+}
+
+.clients-dot {
+    width: 22px;
+    height: 6px;
+
+    border: 1px solid #9b9fab;
+}
+
+.clients-dot__active {
+    border-color: #7264d6;
+
+    background: #7264d6;
+}
