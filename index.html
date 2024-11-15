@@ -97,11 +97,11 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header fixed">
             <div class="container">
                 <div class="header__inner">
                     <!-- Logo -->
-                    <a href="/">
+                    <a href="#">
                         <div class="logo">
                             <img
                                 src="./assets/icon/logo.svg"
@@ -164,11 +164,13 @@
                                 <input
                                     type="email"
                                     name="email"
-                                    id=""
+                                    id="email"
                                     class="hero__form-input"
                                     placeholder="Your email address"
                                     autocomplete="off"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                    required
+                                    minlength="6"
                                 />
                                 <button
                                     type="submit"
@@ -453,8 +455,8 @@
                         <h3 class="section-heading download__heading">Download the Apps</h3>
                         <p class="section-desc download__desc">Download our mobile apps and get started today with a special online bank and move faster</p>
                         <div class="download__img">
-                            <img src="./assets/icon/down-ggplay.svg" alt="">
-                            <img src="./assets/icon/down-astore.svg" alt="">
+                            <a href="#!"><img src="./assets/icon/down-ggplay.svg" alt=""></a>
+                            <a href="#!"><img src="./assets/icon/down-astore.svg" alt=""></a>
                         </div>
 
                         <!-- Decor -->
@@ -529,7 +531,7 @@
                         </ul>
                         <h3 class="footer__heading-form">News letter</h3>
                         <form action="" class="footer__form">
-                            <input type="email" name="email" id="" class="form__form-input" placeholder="Email address..." autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <input type="email" name="email" id="email" required minlength="6" class="form__form-input" placeholder="Email address..." autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             <button type="submit" class="btn footer__form-submit">Subscribe</button>
                         </form>
                     </div>

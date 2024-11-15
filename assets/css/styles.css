@@ -105,6 +105,15 @@ select {
     padding: 24px 0;
 }
 
+.header.fixed {
+    position: sticky;
+    top: -4px;
+
+    z-index: 1;
+
+    background: #fff;
+}
+
 .header__inner {
     display: flex;
     align-items: center;
